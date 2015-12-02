@@ -13,3 +13,11 @@ $ cd src
 $ make
 $ ./domino
 ```
+
+## Screenshots
+
+![Start game](https://raw.githubusercontent.com/pakozm/domino-clips/master/screenshots/start_game.png)
+
+![In game](https://raw.githubusercontent.com/pakozm/domino-clips/master/screenshots/in_game.png)
+
+![Finish game](https://raw.githubusercontent.com/pakozm/domino-clips/master/screenshots/finish_game.png)
