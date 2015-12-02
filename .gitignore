@@ -5,9 +5,11 @@ gmon.out
 ##########################
 *.sh
 
-# Building dirs #
-#################
+# Building #
+############
 *.o
+clips
+domino
 
 # Emacs backups #
 #################
