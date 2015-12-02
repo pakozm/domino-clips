@@ -1,0 +1,3 @@
+- superfícies de 400x20 px
+- fondo del marrón del borde del mesa.bmp --> 7f0000
+- letra: fuente BitStream Vera Sans Bold 12 px Hinting y sin Aliasing color amarillof (fff000)

@@ -1,0 +1,5 @@
+(load domino2.clp)
+(deffunction acabar()
+	(exit)
+)
+(iniciar)
