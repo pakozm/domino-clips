@@ -1,4 +1,4 @@
 In this project has been worked:
- - Alejandro Català Bolos
+ - Alejandro Catalá Bolos
  - Francisco Zamora Martínez
  - All the people involved in CLIPS project.
