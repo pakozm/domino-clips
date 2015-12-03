@@ -29,7 +29,7 @@
 	
 
 (deffunction acabar()
-  (exit)
+  (halt)
   )
 
 ;; Template para definir los atributos de cada jugador
@@ -264,7 +264,6 @@
 	    " " $?palos4 crlf)
   (C_mostrar_mesa)
   (C_flip)
-  (C_esperar_boton_derecho)
   (C_sdl_cerrar)
   (acabar)
   )
@@ -323,7 +322,6 @@
   
   (C_mostrar_mesa)
   (C_flip)
-  (C_esperar_boton_derecho)
   (C_sdl_cerrar)
   (acabar)
   )

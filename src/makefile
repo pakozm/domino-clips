@@ -1,7 +1,7 @@
 NUESTRAS_COSAS = C_defs.h C_ficha_jugador.c C_flip.c C_mostrar_mesa.c\
 		 C_sdl_cerrar.c C_ficha_mesa.c C_leer_ficha.c\
 		 C_proto.h C_sdl_init.c C_msg.c C_fichas.c\
-		 C_elige_jugadores.c C_esperar_boton_derecho.c
+		 C_elige_jugadores.c
 
 
 OBJS = agenda.o analysis.o argacces.o bload.o bmathfun.o bsave.o \

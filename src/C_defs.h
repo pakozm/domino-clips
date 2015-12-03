@@ -35,6 +35,5 @@ void C_msg(void *environment);
 void C_traza(void *environment);
 void C_fichas(void *environment);
 void C_elige_jugadores(void *environment,DATA_OBJECT_PTR returnValuePtr);
-void C_esperar_boton_derecho(void *environment);
 
 #endif

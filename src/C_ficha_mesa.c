@@ -36,7 +36,7 @@ void C_ficha_mesa(void *environment)
 	{	    
 	    s = fichas[ficha].bmpH[sentido];
 	    head.x += s->w;
-	    // sentido_head = sentido_head;   
+	    sentido_head = sentido_head;   
 	    SDL_BlitSurface (s, NULL, mesa, &head);
 	  }
     }
@@ -74,7 +74,7 @@ void C_ficha_mesa(void *environment)
 	{	    
 	    s = fichas[ficha].bmpH[!sentido];
 	    tail.x += s->w;	    
-	    // sentido_tail = sentido_tail;
+	    sentido_tail = sentido_tail;
 	    SDL_BlitSurface (s, NULL, mesa, &tail);
 	  }
     }

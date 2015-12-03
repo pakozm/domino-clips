@@ -44,6 +44,6 @@ void C_flip(void *environment)
     }
     SDL_Flip (screen);
     if (!leyendo && !modo_traza && msg_time<=0) SDL_Delay (DELAY);
-    else SDL_Delay(DELAY);
+    else SDL_Delay(25);
   } while(msg_time > 0 && !modo_traza);
 }
