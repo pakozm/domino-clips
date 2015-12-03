@@ -14,6 +14,9 @@ extern SDL_Rect head, tail;
 /* Valores de las fichas y la mesa */
 extern int fichaH, fichaW, num_mesa;
 
+char is_head(int x, int y);
+char is_tail(int x, int y);
+
 char is_head(int x, int y)
 {
   if (num_mesa==0) return 1;
@@ -45,7 +48,7 @@ char is_tail(int x, int y)
 void C_leer_ficha(void *environment, DATA_OBJECT_PTR returnValuePtr)
 {
   SDL_Event evento;
-  int x, y, pos, head=1;
+  int x, y, pos, head_bool=1;
   void *retorno;
   char fin=0, fin2=0;
   if (n == 0) {
@@ -62,6 +65,7 @@ void C_leer_ficha(void *environment, DATA_OBJECT_PTR returnValuePtr)
 	fin = 1;
 	break;
       case SDL_MOUSEBUTTONDOWN:
+        printf("%d : (%d,%d)\n", evento.button.button, evento.button.x, evento.button.y);
 	if (evento.button.button == SDL_BUTTON_RIGHT) {
 	  x=-1; y=-1;
 	  fin = 1;
@@ -96,7 +100,7 @@ void C_leer_ficha(void *environment, DATA_OBJECT_PTR returnValuePtr)
 			x = y;
 			y = fin;
 			fin = 1;
-			head = 0;
+			head_bool = 0;
 			fin2=1;
 		      }
 		    }
@@ -119,7 +123,7 @@ void C_leer_ficha(void *environment, DATA_OBJECT_PTR returnValuePtr)
   SetMFType(retorno, 2, INTEGER);
   SetMFValue(retorno, 2, EnvAddLong(environment,y));
   SetMFType(retorno, 3, INTEGER);
-  SetMFValue(retorno, 3, EnvAddLong(environment,head));
+  SetMFValue(retorno, 3, EnvAddLong(environment,head_bool));
   SetpType(returnValuePtr, MULTIFIELD);
   SetpValue(returnValuePtr, retorno);
   SetpDOBegin(returnValuePtr, 1);
