@@ -1,7 +1,7 @@
 NUESTRAS_COSAS = C_defs.h C_ficha_jugador.c C_flip.c C_mostrar_mesa.c\
 		 C_sdl_cerrar.c C_ficha_mesa.c C_leer_ficha.c\
 		 C_proto.h C_sdl_init.c C_msg.c C_fichas.c\
-		 C_elige_jugadores.c
+		 C_elige_jugadores.c C_esperar_boton_derecho.c
 
 
 OBJS = agenda.o analysis.o argacces.o bload.o bmathfun.o bsave.o \
@@ -34,8 +34,9 @@ OBJS = agenda.o analysis.o argacces.o bload.o bmathfun.o bsave.o \
 	tmpltbin.o tmpltbsc.o tmpltcmp.o tmpltdef.o tmpltfun.o tmpltlhs.o \
 	tmpltpsr.o tmpltrhs.o tmpltutl.o userdata.o utility.o watch.o \
 	C_ficha_jugador.o C_flip.o C_mostrar_mesa.o C_sdl_cerrar.o \
-	C_sdl_init.o C_ficha_mesa.o C_leer_ficha.o C_msg.o C_fichas.o\
-	C_elige_jugadores.o userfunctions.o factqury.o factqpsr.o
+	C_sdl_init.o C_ficha_mesa.o C_leer_ficha.o C_msg.o C_fichas.o \
+	C_elige_jugadores.o C_esperar_boton_derecho.o \
+	userfunctions.o factqury.o factqpsr.o
 
 all: domino clips
 
