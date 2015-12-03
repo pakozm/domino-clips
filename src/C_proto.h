@@ -43,6 +43,8 @@ void EnvUserFunctions(void *environment)
                     PTIEF C_fichas, "C_fichas");
   EnvDefineFunction(environment, "C_elige_jugadores", 'm',
                     PTIEF C_elige_jugadores, "C_elige_jugadores");
+  EnvDefineFunction(environment, "C_esperar_boton_derecho", 'v',
+                    PTIEF C_esperar_boton_derecho, "C_esperar_boton_derecho");
 }
 
 #endif
