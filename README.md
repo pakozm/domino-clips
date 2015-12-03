@@ -1,7 +1,8 @@
 # Domino game in CLIPS
 
 This game has been developed as a project of artificial intelligence course
-during our computer science degree in 2004-2005 academic year.
+during our computer science degree in 2003-2004 academic year for Knowledge
+Engineering course.
 
 Contains source code of [CLIPS](http://clipsrules.sourceforge.net/) plus some
 extensions to allow input/output interactions using
